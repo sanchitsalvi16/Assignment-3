@@ -1,0 +1,4 @@
+select ci.Name, co.Name ,
+cl.percentage from city ci,
+country co,
+countrylanguage cl where ci.ID=co.Capital AND co.Code=cl.CountryCode AND cl.Language='English' AND cl.Percentage>=50;
